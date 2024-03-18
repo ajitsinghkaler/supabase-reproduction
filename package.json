@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run build && wrangler pages dev dist/cloudflare --compatibility-date=2024-03-14 --experimental-local",
-    "build": "ng build && npm run process",
+    "build": "ng build --configuration development && npm run process",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:my-angular-app": "node dist/my-angular-app/server/server.mjs",
